@@ -1,0 +1,110 @@
+% LaTeX Sourcode
+
+% Präambel
+% Parameter von \documentclass
+% https://texblog.org/2013/02/13/latex-documentclass-options-illustrated/
+\documentclass[12pt,pdftex,parskip=half]{article}
+
+\include{Packages}
+\include{Layout/Zeilenabstand}
+\include{Layout/Kopfzeile}
+\include{Layout/Fusszeile}
+\include{Layout/Layout}
+\include{Layout/Farben}
+\include{Layout/EigeneHeader}
+% \include{Layout/Wasserzeichen}
+
+%\glsnoexpandfields
+\makeglossaries
+
+\begin{document}
+
+% Im gesamten Dokument Kopf- und Fußzeile anzeigen
+\pagestyle{fancy}
+
+% URLs auch nach / umbrechen lassen:
+\addto\UrlBreaks{\do\/}
+\def\do@url@hyp{\do\-}
+% URL-Umbrüche anzeigen lassen
+\show\UrlBreaks
+
+% Vorwort - Deckblatt, Inhaltsverzeichnis etc.
+% Die Gliederung richtet sich nach den allgemeinen FOM-Vorgaben aus 
+% https://campus.bildungscentrum.de/nfcampus/dc/3667/LeitfadenZurFormalenGestaltungSeminarAbschlussarbeiten_BCW_Stud_2018_02_21.pdf
+
+% Deckblatt
+\include{Inhalt/01Einleitung/Deckblatt}
+
+% Römische Kapitelnummerierung
+% \setcounter{page}{2}
+\pagenumbering{roman}
+
+% Inhaltsverzeichnis
+\tableofcontents
+
+% Verwendete Version des Leitfadens zur formalen Gestaltung nennen.
+\include{Inhalt/01Einleitung/Leitfaden}
+
+% Abbildungsverzeichnis hinzufügen
+\include{Inhalt/01Einleitung/Abbildungsverzeichnis}
+
+% Tabellenverzeichnis hinzufügen
+\include{Inhalt/01Einleitung/Tabellenverzeichnis}
+
+% Glossar und Abkürzungsverzeichnis hinzufügen
+\include{Inhalt/01Einleitung/Glossar}
+
+
+\newpage
+
+% Formelverzeichnis hinzufügen
+\include{Inhalt/01Einleitung/Formelverzeichnis}
+
+% Symbolverzeichnis hinzufügen
+\include{Inhalt/01Einleitung/Symbolverzeichnis}
+
+% Sperrvermerk hinzufügen
+\include{Inhalt/01Einleitung/SperrvermerkGER}
+
+% Englischsprachiger Sperrvermerk
+\include{Inhalt/01Einleitung/SperrvermerkENG}
+
+% Mainmatter
+\clearpage
+
+% Ab hier Kopzeile anzeigen
+
+% Arabische Seitennummerierung
+\pagenumbering{arabic}
+
+\include{Inhalt/02Hauptteil/01Hauptteil}
+
+% Anhang / Backmatter
+\clearpage
+
+% Römische Seitennummerierung
+\pagenumbering{roman}
+\setcounter{page}{9}
+
+% Literaturverzeichnis
+% Stil des Literaturverzeichnisses
+% IEEEtran
+\bibliographystyle{IEEEtran}
+\bibliography{Inhalt/03Anhang/Literaturverzeichnis}
+
+
+\clearpage
+
+% Rechtsprechungsverzeichnis einfügen
+\include{Inhalt/03Anhang/Rechtsprechungsverzeichnis}
+
+% Quellenverzeichnis einfügen
+\include{Inhalt/03Anhang/Quellenverzeichnis}
+
+% Deutschsprachige ehrenwörtliche Erklärung einfügen
+\include{Inhalt/03Anhang/EhrenwoertlicheErklaerungGER}
+
+% Englischsprachhige ehrenwörtliche Erklärung einfügen
+\include{Inhalt/03Anhang/EhrenwoertlicheErklaerungENG}
+
+\end{document}

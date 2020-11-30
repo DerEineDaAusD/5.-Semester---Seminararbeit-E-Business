@@ -1,0 +1,446 @@
+% Hier können eigene Header-Format für bestimmte Seiten definiert werden
+% Aufruf im Dokument mit \thispagestyle{mystyle}
+% Gemäß https://tex.stackexchange.com/questions/519136/set-header-of-a-specific-page-only
+% Und Antwort https://tex.stackexchange.com/a/519189
+
+\fancypagestyle{Leitfaden}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Leitfaden}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Abbildungsverzeichnis}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Abbildungsverzeichnis}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Abkuerzungsverzeichnis}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Abkuerzungsverzeichnis}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Glossar}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Glossar}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Tabellenverzeichnis}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Tabellenverzeichnis}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Formelverzeichnis}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Formelverzeichnis}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Symbolverzeichnis}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Symbolverzeichnis}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Symbolverzeichnis}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Symbolverzeichnis}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Sperrvermerk}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Sperrvermerk}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{ConfidentialityClause}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Confidentiality Clause}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{Literatur}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Literatur}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{EhrenwoertlicheErklaerung}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Ehrenwörtliche Erklärung}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}
+
+\fancypagestyle{DeclarationInLieuOfOath}
+{
+    % Rechte Seite = manueller Seitentitel
+    \fancyhead[R]{Declaration in lieu of oath}
+    
+    % Mittlerer Header = Aktuelle Seite
+    \fancyhead[C]{\nouppercase{\thepage}}
+    %\fancyheadoffset[C]{1cm}
+
+    % Linker Header = leer
+    \fancyhead[L]{}
+    
+    %
+    % Fusszeile
+    %
+    
+    % Layout der Fußzeile
+    % Fußzeile ist leer
+
+    % Fußzeilenformatierung
+    % \renewcommand{\footrulewidth}{0.4pt}
+
+    % Linke Spalte
+    \lfoot{} 
+
+    % Mittlere Spalte
+    % \cfoot{\small  \today}
+    \cfoot{}
+
+    % Rechte Spalte 
+    % \rfoot{\normalfont\small Seite \thepage / \ref{TotPages}}
+    \rfoot{}
+}

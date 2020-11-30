@@ -1,0 +1,40 @@
+% Deckblatt ohne Kopf- und Fußzeile
+% https://tex.stackexchange.com/questions/23766/suppress-fancy-header-and-footer-on-first-page-only
+% Keine Header auf Deckblatt
+\thispagestyle{empty}
+
+% Keine Seitenabstände auf Deckblatt
+\newgeometry{}
+
+\begin{center}
+\vfill{
+
+% Logo
+{\vspace{\fill}{\includegraphics[width=0.3\textwidth]{Grafiken/FOM_Logo.png}}}\\
+\large{FOM - Hochschule für Ökonomie und Management}\\
+\large{Studienzentrum Siegen}\\
+\vspace{1cm}
+
+% Titel
+{\huge Titel\\ 
+ \large{Untertitel\\}
+}
+\vspace{1cm}
+
+% Modul
+{\large Seminararbeit im  Modul\\<Modulname>\\}}
+{\large{Wirtschaftsinformatik <Aktuelles Semester>\\}}
+{\large{Dozent: <Name und Titel>\\}}
+
+\end{center}
+
+% Namen und Abgabedatum
+\vspace{1cm}
+\begin{tabularx}{\textwidth}[b]{p{5cm} X p{5cm}}
+Matrikelnummer: 479141\\
+Herr Danny Langenbach\\
+Abgabe: \today
+\end{tabularx}
+
+% Neue Seite
+\newpage

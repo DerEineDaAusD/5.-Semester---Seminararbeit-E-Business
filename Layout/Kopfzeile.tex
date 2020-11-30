@@ -1,0 +1,45 @@
+% Kopfzeilenformatierung
+
+% AtBeginDocument = Das globale Layout von Geometry gilt auch für Kopf-  und Fußzeile
+
+\AtBeginDocument{
+
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % set the \leftmark
+% \renewcommand*\sectionmarkformat{} % keine Nummerierung im Kopf
+
+%\RenewDocumentCommand{\section}{som}{
+%  \IfBooleanTF{#1}
+%   {% there's a *
+%    \CLASSsection*{#3}\markboth{#3}{}
+%   }
+%   {% no *
+%    \IfNoValueTF{#2}
+%     {% no opt arg
+%      \CLASSsection{#3}%
+%     }
+%     {% opt arg
+%      \CLASSsection[#2]{#3}
+%     }
+%   }
+% }
+
+% fix \tableofcontents
+% \renewcommand{\tableofcontents}{%
+%  \section*{\contentsname}%
+%  \@starttoc{toc}%
+%}
+
+% Rechter Header = leer
+% \leftmark = Aktueller Abschnitt
+\fancyhead[R]{}
+
+% Mittlerer Header = Aktuelle Seite
+\fancyhead[C]{\nouppercase{\thepage}}
+%\fancyheadoffset[C]{1cm}
+
+% Linker Header = leer
+\fancyhead[L]{}
+% \fancyheadoffset[R]{1cm}
+
+}

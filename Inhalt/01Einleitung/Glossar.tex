@@ -1,0 +1,311 @@
+\begin{comment}
+Ein kombiniertes Fachwort- und Abkürzungsverzeichnis auf Basis des Paketes "glossaries", welches Akronyme und Fachbegriffe in einem Kapitel nacheinander ausgibt.
+Nur eine Überschrift wird ins Inhaltsverzeichnis aufgenommen.
+Lösung gemäß https://www.overleaf.com/learn/latex/glossaries
+Abkürzungen können im Text mit \acrshort{} ausgegeben werden
+Fachbegriffe mit \GLs - Wichtig: Großes G!
+\end{comment}
+
+%--------------------------------------------------------------------%
+% In diesem Abschnitt werden die Abkürzungen mit \newacronym definiert
+%---------------------------------------------------------------------%
+\newacronym{EDV}{EDV}{Elektronische Datenverarbeitung}
+\newacronym{POC}{POC}{Proof Of Concept}
+\newacronym{HA}{HA}{High Aviability / Hochverfügbarkeit}
+\newacronym{IaaS}{IaaS}{Infrastructure as a service}
+\newacronym{SaaS}{SaaS}{Software as a Service}
+\newacronym{OS}{OS}{Operating Systems / Betriebssystem}
+\newacronym{VMM}{VMM}{Virtual Machine Manager}
+\newacronym{VM}{VM}{Virtual Machine / Virtuelle Maschine}
+\newacronym{CE}{CE}{Containerengine / Container-Engine}
+\newacronym{CPU}{CPU}{Central Processing Unit / Zentrale Recheneinheit (eines Computers)}
+\newacronym{RAM}{RAM}{Random Access Memory / Wahlfreier Zugriffsspeicher}
+\newacronym{IoT}{IoT}{Internet of Things / Internet der Dinge}
+\newacronym{UFS}{UFS}{Union File System}
+\newacronym{AWS}{AWS}{Amazon Web Services}
+\newacronym{ITU}{ITU}{International Telecommunication Union}
+\newacronym{SIP}{SIP}{Session Initiation Protocol}
+\newacronym{UAC}{UAC}{User Account Control / Nutzerkontenkontrolle}
+\newacronym{CA}{CA}{Certificate Authority / Zertifizierungstelle}
+\newacronym{STUN}{STUN}{Session Traversal Utilities for NAT}
+\newacronym{TURN}{TURN}{Traversal Using Relays around NAT}
+\newacronym{NAT}{NAT}{Network Address Translation}
+\newacronym{ITU-T}{ITU-T}{International Telecommunication Union}
+\newacronym{VoIP}{VoIP}{Voice-over-IP}
+\newacronym{BSI}{BSI}{Bundesamt für Sicherheit in der Informationstechnik}
+\newacronym{VAF}{VAF}{Bundesverband Telekommunikation e.V}
+\newacronym{QoS}{QoS}{Quality of Service}
+\newacronym{IP}{IP}{Internet Protocol}
+\newacronym{IPv4}{IPv4}{Internet Protocol V4}
+\newacronym{IPv6}{IPv6}{Internet Protocol V6}
+\newacronym{Payload}{Payload}{Nutzdaten}
+\newacronym{UM}{UM}{Unified Communications}
+\newacronym{PSTN}{PSTN}{Public Switched Telephone Network / Öffentliches Fernemeldenetz}
+\newacronym{IDS}{IDS}{Intrusion Detection System}
+\newacronym{PBX}{PBX}{Private Branch Exchange, englische Bezeichnung für Telefonanlage}
+\newacronym{TLS}{TLS}{Transport Layer Security}
+\newacronym{HTTPS}{HTTPS}{Hyper Text Transport Protocol Secure}
+\newacronym{ARP}{ARP}{Address Resolution Protocol}
+\newacronym{MAC}{MAC}{Media Access Control}
+\newacronym{TKA}{TKA}{Telekommunikationsanlage / Telefonanlage}
+\newacronym{H.323}{H.323}{VoIP-Protokollstapel gemäß Spezifikationen der \acrshort{ITU-T}}
+\newacronym{SBC}{SBC}{Session Border Controller}
+\newacronym{ALG}{ALG}{Application Layer Gateway}
+\newacronym{VLAN}{VLAN}{Virtual Local Area Network}
+\newacronym{VPN}{VPN}{Virtual Private Network}
+\newacronym{SQL}{SQL}{Structured Query Language}
+\newacronym{B2BUA}{B2BUA}{Back-To-Back-User-Agent, vgl. \GLs{Back-to-Back-User-Agent}}
+\newacronym{GUI}{GUI}{Graphical User Interface}
+\newacronym{DNS}{DNS}{Domain Name System}
+\newacronym{URL}{URL}{Uniform Ressource Locator}
+\newacronym{SDN}{SDN}{Software-defined Network}
+\newacronym{LAN}{LAN}{Local area network}
+\newacronym{WAN}{WAN}{Wide area network}
+\newacronym{IEEE}{IEEE}{Institute of Electrical and Electronics Engineers}
+\newacronym{API}{API}{Application Programming Interface}
+\newacronym{MPLS}{MPLS}{Multiprotocol Label Switching}
+\newacronym{BGP}{BGP}{Border Gateway Protocol}
+\newacronym{FCS}{FCS}{Frame Check Sequence}
+\newacronym{TCP}{TCP}{Transport Control Protocol}
+\newacronym{UDP}{UDP}{User Datagramm Protocol}
+\newacronym{TRILL}{TRILL}{Transparent Interconnection of Lots of Links}
+\newacronym{DSL}{DSL}{Digital Subscriber Line}
+\newacronym{NFV}{NFV}{Network Function Virtualisation}
+\newacronym{LTE}{LTE}{Long Term Evolution}
+\newacronym{WLAN}{WLAN}{Wireless Local Area Network}
+\newacronym{XML}{XML}{Extensible Markup Language}
+\newacronym{JSON}{JSON}{JavaScript Object Notation}
+\newacronym{YANG}{YANG}{Yet Another Next Generation}
+\newacronym{WAN}{WAN}{Wide Area Network}
+\newacronym{OSS}{OSS}{Operational Support System}
+\newacronym{ITIL}{ITIL}{IT Infrastructure Libary}
+\newacronym{COBIT}{COBIT}{Control Objectives for Information and Related Technology}
+\newacronym{KM}{KM}{Knowledge Management}
+\newacronym{CRM}{CRM}{Customer Relationship Management}
+\newacronym{ERP}{ERP}{Enterprise Ressource Planning}
+\newacronym{DMS}{DMS}{Document Management System}
+\newacronym{OLAP}{OLAP}{Online Analytical Processing}
+\newacronym{DSS}{DSS}{Decision Support System}
+\newacronym{WYSIWYG}{WYSIWYG}{What You See Is What You Get}
+\newacronym{CTI}{CTI}{Computer Telephony Integration}
+\newacronym{UC}{UC}{Unified Communications}
+
+%--------------------------------------------------------------------------%
+% In diesem Abschnitt werden die Fachbegriffe mit \newglossaryentry definiert
+%--------------------------------------------------------------------------%
+\newglossaryentry{OSI/ISO-Referenzmodell}
+{
+    name=OSI/ISO-Referenzmodell,
+    description={Hierarchisches, siebenschichtiges Modell, das die logische Struktur eines Netzwerks beschreibt. Spezifiziert als X.200-Standard der \acrshort{ITU-T}}
+}
+\newglossaryentry{IETF}
+{
+    name=IETF,
+    description={Internet Engineering Task Force, eine offene Gesellschaft zur Schaffung von Standards im Internet. Vgl. \url{https://ietf.org/about/}}
+}
+\newglossaryentry{ISDN}
+{
+    name=ISDN,
+    description={Integrated Systems Digital Network / Dienstintegrierendes Digitales Netzwerk}
+}
+\newglossaryentry{RFC}
+{
+    name=RFC,
+    description={Request for comment. Standards bzw. Standardisierungsvorschläge der IETF}
+}
+\newglossaryentry{ITU-T}
+{
+    name=ITU-T,
+    description={Standardisierungsausschus der internationalen Fernmelde-Union (International Telecommunication Union, ITU)}
+}
+\newglossaryentry{DDoS}
+{
+    name=DDoS,
+    description={Distributed Denial Of Service- Angriffsmethode, bei der von vielen verteilten Endpunkten ein Angriffsziel gezielt überlastet wird}
+}
+\newglossaryentry{MITM}
+{
+    name=MITM,
+    description={Man in the middle. Angriffsmethode, bei der Kommuikationsverbindungen zwischen zwei Teilnehmern von Dritten abgefangen / abgehört werden}
+}
+\newglossaryentry{Zertifikat}
+{
+    name=MITM,
+    description={Ein digitales Zertifikat zur \acrshort{TLS}-Verschlüsselung gemäß dem gemäß X.509 Standard der \acrshort{ITU-T}. Vgl.\url{https://www.itu.int/rec/T-REC-X.509-201910-I}}
+}
+\newglossaryentry{IRC}
+{
+    name=IRC,
+    description={Internet Relay Chat, ein textbasierter Server-Client-Chat gemäß RFC1459. Vgl. \url{https://tools.ietf.org/pdf/rfc1459.pdf}}
+}
+\newglossaryentry{RTP}
+{
+    name=RTP,
+    description={Real Time Protocol, ein Protokoll zur Ende-zu-Ende-Medienübertragung über paketbasierte Netze gemäß RFC 3550. Vgl. \url{https://tools.ietf.org/pdf/rfc3550.pdf}}
+}
+\newglossaryentry{SRTP}
+{
+    name=SRTP,
+    description={Verschlüsselte Version von \acrshort{RTP} gemäß RFC 3711. Vgl. \url{https://tools.ietf.org/pdf/rfc3711.pdf}}
+}
+\newglossaryentry{Transcodierung}
+{
+    name=Transcodierung,
+    description={Der Vorgang der Umwandlung eines Medienstroms in einen zweiten mit anderen Eigenschaften z.B. für Paketgröße, Komprimierung etc}
+}
+\newglossaryentry{LDAP}
+{
+    name=LDAP,
+    description={Lightweight Directory Access Protocol. Ein Protokoll zum Zugriff auf dateibasierte Verzeichnisdienste, ursprünglich in RFC 4511 spezifiziert. Vgl. \url{https://tools.ietf.org/pdf/rfc4511.pdf}}
+}
+\newglossaryentry{Back-to-Back-User-Agent}
+{
+    name=Back-to-Back-User-Agent,
+    description={Back-to-Back-User-Agent (B2BUA). Bezeichnung für eine \acrshort{SIP}-spezifische Komponente, die gleichzeitig Server- und Client ist}
+}
+\newglossaryentry{Spoofing}
+{
+    name=Spoofing,
+    description={Auch Spoofen. Sinngemäß zu etwas verfälschen bzw. etwas absichtlich fälschen}
+}
+\newglossaryentry{RADIUS}
+{
+    name=RADIUS,
+    description={Remote Authentication Dial-In User Service, eine Möglichkeit zur Authentifizierung von Netzwerkteilnehmern gemäß IEEE 802.1x}
+}
+\newglossaryentry{Registrar}
+{
+    name=Registrar,
+    description={Komponente eines \acrshort{VoIP}-Netzes, die aktive Verbindungen mit einem Nutzerverzeichnis verknüpft und somit Lokationsdienste ermöglicht (z.B. Authentifizierung eines Teilnehmers)}
+}
+\newglossaryentry{URL}
+{
+    name=URL,
+    description={Uniform Ressource Locator. Von der \gls{IETF} spezifizierter Standard zur Adressierung von Ressourcen im Internet. Vgl. \url{https://tools.ietf.org/html/rfc1738}}
+}
+\newglossaryentry{Load-Balancing}
+{
+    name=Load-Balancing,
+    description={Bezeichnet die Verlagerung von Anfragen/Berechnungen auf weniger ausgelastete Komponenten}
+}
+\newglossaryentry{Kernel}
+{
+    name=Kernel,
+    description={Bezeichnet den eigentlichen Kern eines Betriebssystems}
+}
+\newglossaryentry{Hypervisor}
+{
+    name=Hypervisor,
+    description={Bezeichnet eine Komponente zur Überwachung und Verwaltung virtueller Maschinen}
+}
+\newglossaryentry{Kernelisolierung}
+{
+    name=Kernelisolierung,
+    description={Bezeichnet ein (Sicherheits-)Konzept, bei dem der Betriebssystemkern (Kernel) von normalen Anwendungen abgeschirmt bzw. isoliert wird, um zugriffe gewöhnlicher Anwendungen direkt auf das Betriebssystem zu vermeiden}
+}
+\newglossaryentry{Overhead}
+{
+    name=Overhead,
+    description={Bezeichnet ungenutze Ressourcen bzw. unnötigen Administrations- und Verwaltungsaufwand der bei wachsender Systemgröße entsteht. Ist in der Bedeutung synonym zu z.B. Wasserkopf}
+}
+\newglossaryentry{Benchmarks}
+{
+    name=Benchmarks,
+    description={Bezeichnet die Ermittlung von Kennzahlen eines Systems, meist zur Performance- und Leistungsbeurteilung von Hardware}
+}
+\newglossaryentry{Node}
+{
+    name=Node,
+    description={Bezeichnet im Kontext der Containerisierung immer eine vollständige Container-Installation mit eigener Container-Engine}
+}
+\newglossaryentry{Engine}
+{
+    name=Engine,
+    description={Bezeichnet den Kern einer Containerisierungslösung, den eigentlichen Container-Host}
+}
+\newglossaryentry{Daemon}
+{
+    name=Daemon,
+    description={Bezeichnet einen permanent laufenden und verfügbaren Systemprozess. Unter Windows als Dienst bezeichnet}
+}
+\newglossaryentry{Clustering}
+{
+    name=Clustering,
+    description={Bezeichnet die logische Bündelung von Hardware- oder Softwaresystemen für Zwecke wie Leistungserhöhung oder Ausfallsicherheit}
+}
+\newglossaryentry{AJAX}
+{
+    name=AJAX,
+    description={Ajax ist ein Konzept der asymmetrischen (versetzten) Dateiübertragung zwischen einem (Web-)Server und einem Browser. AJAX ermöglicht es, Bestandteile einer Seite neu zu laden, ohne das dabei gleich die gesamte angezeigte Seite neu geladen werden muss}
+}
+\newglossaryentry{MSI}
+{
+    name=MSI,
+    description={Ein \acrshort{MSI}-Paket (Microsoft Installer File) ist ein Softwareinstallationspaket für Windows-Systeme, welches benutzerdefinierte Voreinstellungen enthalten kann, die beim Installationsvorgang automatisch eingerichtet werden}
+}
+\newglossaryentry{Subnetz}
+{
+    name=Subnetz,
+    description={Ein Subnetz ist ein innerhalb eines IP-Bereiches getrennt adressierbarer Bereich des Internet-Protocols}
+}
+\newglossaryentry{ZIP}
+{
+    name=ZIP,
+    description={Ein Dateiformat zur verlustfreien Komprimierung von Daten}
+}
+\newglossaryentry{Codec}
+{
+    name=Codec,
+    description={Als Codec (Zusammengesetzt "coder" und "decoder") bezeichnet man ein Algorithmenpaar, das Daten oder Signale digital kodiert und dekodiert. Ein Codec wie z.B. g711a enthält Informationen darüber, mit welcher Abtastrate, Häufigkeit etc. ein Signal aufgezeichnet wurde}
+}
+\newglossaryentry{1st Level-Support}
+{
+    name=1st Level-Support,
+    description={Erste Ebene des Anwendersupports, an welche sich ein Benutzer direkt wenden kann}
+}
+\newglossaryentry{CMD}
+{
+    name=CMD,
+    description={cmd.exe, Kommandozeileninterpreter des Windows-Betriebssystems (Offiziell als Windows-Eingabeaufforderung bezeichnet)}
+}
+\newglossaryentry{paketvermittelt}
+{
+    name=paketvermittelt,
+    description={In einem paketvermittelt Datennetz werden Informationen in (Teil-)Stücken übertragen. Abhängig von den Übertragungseigenschaften des Netzes werden unterschiedlich viele Pakete erstellt und gesendet, die anschließend vom Empfänger wieder zusammengesetzt werden}
+}
+\newglossaryentry{Orchestrar}
+{
+    name=Orchestrar,
+    description={Steuerungskomponente zur Verwaltung einer virtuellen Umgebung. Der Orchestrar erzeugt, löscht, startet und stoppt virtuelle Maschinen, entweder manuell oder automatisiert}
+}
+\newglossaryentry{Bursts}
+{
+    name=Bursts,
+    description={Kurze, sprungartige ad-hoc Datenübertragungen}
+}
+\newglossaryentry{DevOps}
+{
+    name=DevOps,
+    description={Prozessansatz aus Softwareentwicklung und IT-Systemadministration. Kunstwort aus Development und (IT) Operations. Beschreibt einen Ansatz, bei dem durch gemeinsame Zusammenarbeit von Entwicklung und Administration die Geschwindigkeit der Auslieferung von Software und die Qualität der erzeugten Software verbessert werden sollen}
+}
+\newglossaryentry{OpenFlow}
+{
+    name=OpenFlow,
+    description={OpenFlow ist ein Standard von der Open Network Foundation (\url{https://www.opennetworking.org/sdn-definition/}) zum Routing von Datenpaketen in einem software-defined Network}
+}
+\newglossaryentry{NETCONF}
+{
+    name=NETCONF,
+    description={NETCONF (Network Configuration Protocol) ist ein zuerst mit RFC 4741 (\url{https://tools.ietf.org/html/rfc4741}) entworfenes und mit RFC 6241 (\url{https://tools.ietf.org/html/rfc6241}) erweiteres Netzwerkprotokoll zur Konfiguration und Verwaltung von Netzwerkkomponenten auf Basis einer XML-Syntax}
+}
+
+
+% Abkürzungen werden nur ausgegeben, wenn sie auch verwendet wurden.
+% Mit title=Abkürzungsverzeichnis kann die Bezeichnung gesetzt werden
+\printglossary[type=\acronymtype,title=Abkürzungsverzeichnis]
+
+% Seitenumbruch zwischen Abkürzungen und Fachbegriffen
+\newpage
+
+% Fachbegriffe ausgeben
+\printglossary[type=main,title=Fachbegriffe]

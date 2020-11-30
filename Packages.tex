@@ -1,0 +1,80 @@
+% Diese Datei enthält sämtliche zusätzlich eingebundenen Pakete
+
+% URLs mit Zeilenumbruch ermöglichen
+% \usepackage[hyphens]{url}
+
+% PDF Dokumenteneigenschaften - Hyperref ermöglicht Meta-Informationen in der PDF
+% https://www.namsu.de/Extra/pakete/Hyperref.html
+% Links werden im Dokument schwarz dargestellt
+\usepackage[pdftitle={Seminararbeit Containerisierung vs. Virtualisierung},pdfsubject={Virtualisierung und Containerisierung},pdfauthor={Danny Langenbach},pdfkeywords={VoIP, Security, Risiken,SBC},pdfstartview=FitH,colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+
+% https://tex.stackexchange.com/questions/3033/forcing-linebreaks-in-url
+% https://tex.stackexchange.com/a/3034
+% https://tex.stackexchange.com/a/10419
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+% Komplette PDFs einbinden
+\usepackage{pdfpages}
+
+% main=ngerman legt die Hauptsprache des Dokuments auf Neue Deutsche Rechtschreibung fest
+% (Umlaute, Datum etc)
+% englisch erlaubt es einzelne Abschnitte in Englisch zu definieren
+\usepackage[main=ngerman, english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}  
+
+% Für das Euro-Symbol
+% \usepackage{eurosym}  \DeclareUnicodeCharacter{20AC}{\euro}
+
+% Graphix ermöglicht die Einbindung von .jpeg,.jpg,.png usw.
+\usepackage{graphicx}
+
+% Kopzeile und Stil
+\usepackage{fancyhdr}
+
+\usepackage{caption}
+% Fußnote
+\usepackage{footmisc}
+
+% Um das Abbildungsverzeichnis ins Inhaltsverzeichnis aufzunehmen
+% Nottoc verhindert das sich das Inhaltsverzeichnis selbst als Inhalt nennt
+% https://tex.stackexchange.com/a/297985
+\usepackage[nottoc]{tocbibind}
+% https://texblog.org/2013/04/29/latex-table-of-contents-list-of-figurestables-and-some-customizations/#totoc
+
+% Package für Gesamtseitenzahl
+\usepackage{lastpage}
+
+% tabularx für Tabellen
+\usepackage{tabularx}
+
+% Für Blindtext
+\usepackage{lipsum}
+
+% Zitate APA Style - 6. Version
+% Muss auskommentiert werden, wenn IEEEtran verwendet werden soll
+% \usepackage{apacite}
+
+% Für das Abkürzungsverzeichnis
+% Ermöglicht die Verwendung von \acs im Text und gibt nur verwendete Abkürzungen im Glossar aus
+% \usepackage[printonlyused,withpage]{acronym}
+% printonlyused = Nur verwendete Acronyme angeben
+% WithPage = Seite der Abkürzung im Dokument
+
+% nopostdot = Kein Punkt nach der Abkürzung
+% nonumberlist = Keine Seitenzahlen ausgeben, wo die Abkürzungen verwendet werden.
+% toc = true nimmt Eintrag ins Inhaltsverzeichnis auf, ohne Notwendigkeit von \addcontentsline
+% siehe https://tex.stackexchange.com/a/156742
+% \usepackage[acronym,toc=true]{glossaries}
+\usepackage[acronym,toc=true]{glossaries}
+
+% \usepackage{xparse}
+
+% Für mehrzeilige Kommentare
+\usepackage{verbatim}
+
+% Für Textoverlays wie z.B. "Entwurf" oder "Vertraulich"
+% Gestaltung des Wasserzeichens unter /Layout/Wasserzeichen
+% \usepackage[firstpage]{draftwatermark} - Wasserzeichen nur auf der ersten Seite
+% \usepackage[nostamp]{draftwatermark} - Kein Wasserzeichen irgendwo im Dokument
+% \usepackage{draftwatermark}
