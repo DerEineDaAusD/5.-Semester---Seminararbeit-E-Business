@@ -58,16 +58,16 @@
 \newpage
 
 % Formelverzeichnis hinzufügen
-\include{Inhalt/01Einleitung/Formelverzeichnis}
+% \include{Inhalt/01Einleitung/Formelverzeichnis}
 
 % Symbolverzeichnis hinzufügen
-\include{Inhalt/01Einleitung/Symbolverzeichnis}
+% \include{Inhalt/01Einleitung/Symbolverzeichnis}
 
 % Sperrvermerk hinzufügen
-\include{Inhalt/01Einleitung/SperrvermerkGER}
+% \include{Inhalt/01Einleitung/SperrvermerkGER}
 
 % Englischsprachiger Sperrvermerk
-\include{Inhalt/01Einleitung/SperrvermerkENG}
+% \include{Inhalt/01Einleitung/SperrvermerkENG}
 
 % Mainmatter
 \clearpage
@@ -77,7 +77,40 @@
 % Arabische Seitennummerierung
 \pagenumbering{arabic}
 
-\include{Inhalt/02Hauptteil/01Hauptteil}
+% 1.
+\input{Inhalt/02Hauptteil/1.0Einleitung}
+\input{Inhalt/02Hauptteil/1.1Motivation}
+\input{Inhalt/02Hauptteil/1.2Methode}
+\input{Inhalt/02Hauptteil/1.3Ziel}
+
+% 2.
+\input{Inhalt/02Hauptteil/2.0KlassischeSoftwareentwicklung}
+\input{Inhalt/02Hauptteil/2.1MerkmaleKlassischeSoftwareentwicklung}
+\input{Inhalt/02Hauptteil/2.2KlassischeSoftwareentwicklungsmodelle}
+
+% 3.
+\input{Inhalt/02Hauptteil/3.0AgileSoftwareentwicklung}
+\input{Inhalt/02Hauptteil/3.1AgilesManifest}
+\input{Inhalt/02Hauptteil/3.2AgileSoftwareentwicklungsmodelle}
+\input{Inhalt/02Hauptteil/3.3DevOpsCICD}
+
+% 4.
+\input{Inhalt/02Hauptteil/4.0PotenzialeCICD}
+\input{Inhalt/02Hauptteil/4.1BWLPotenziale}
+\input{Inhalt/02Hauptteil/4.2TechnischePotenziale}
+
+% 5.
+\input{Inhalt/02Hauptteil/5.0CICDPraxis}
+\input{Inhalt/02Hauptteil/5.1Azure}
+\input{Inhalt/02Hauptteil/5.2AWS}
+\input{Inhalt/02Hauptteil/5.3Opensource}
+
+% 6.
+\input{Inhalt/02Hauptteil/6.0CICDVoraussetzungen}
+
+7.
+\input{Inhalt/02Hauptteil/7.0Fazit}
+
 
 % Anhang / Backmatter
 \clearpage
@@ -92,19 +125,18 @@
 \bibliographystyle{IEEEtran}
 \bibliography{Inhalt/03Anhang/Literaturverzeichnis}
 
-
 \clearpage
 
 % Rechtsprechungsverzeichnis einfügen
-\include{Inhalt/03Anhang/Rechtsprechungsverzeichnis}
+% \include{Inhalt/03Anhang/Rechtsprechungsverzeichnis}
 
 % Quellenverzeichnis einfügen
-\include{Inhalt/03Anhang/Quellenverzeichnis}
+% \include{Inhalt/03Anhang/Quellenverzeichnis}
 
 % Deutschsprachige ehrenwörtliche Erklärung einfügen
 \include{Inhalt/03Anhang/EhrenwoertlicheErklaerungGER}
 
 % Englischsprachhige ehrenwörtliche Erklärung einfügen
-\include{Inhalt/03Anhang/EhrenwoertlicheErklaerungENG}
+% \include{Inhalt/03Anhang/EhrenwoertlicheErklaerungENG}
 
 \end{document}
