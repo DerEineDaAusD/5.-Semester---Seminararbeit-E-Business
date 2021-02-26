@@ -80,4 +80,7 @@
 % \usepackage{draftwatermark}
 
 % Für durchgestrichenen Text
-\usepackage{ulem}
+% Option normalen zur Vermeidung ungewollter Unterstreichungen bei schräggestelltem Text
+% To  use\ulinefor  underlin-ing,  but have\emand\emphstill produce normal italics,  load ulem with\usepackage[normalem]{ulem}, or declare\normalemin the preamble
+% -> https://ftp.agdsn.de/pub/mirrors/latex/dante/macros/latex/contrib/ulem/ulem.pdf
+\usepackage[normalem]{ulem}
