@@ -2,3 +2,55 @@
 % \addcontentsline{toc}{section}{Benötigte Funktionen für eine CI/CD-Pipeline}
 \label{Benoetigte Funktionen für eine CI/CD-Pipeline}
 Die vorangegangenen Abschnitte haben einen Eindruck vermittelt, wie langwierig der Weg von klassischer über agile Softwareentwicklung hin zu \gls{DevOps} und \acrshort{CI}/\acrshort{CD} war. Die Abschnitte \ref{UseCases mit proprietärer Software}  und \ref{UseCases mit Opensource-Software} haben einen Eindruck vermittelt, welche Vielzahl von Anwendungen es in diesem weiten Themenfeld gibt. Abschließend ist nun zu betrachten, welche Elemente zwischen den Lösungen gleich und damit integraler Bestandteil einer \acrshort{CI}/\acrshort{CD}-Pipeline sind.\newline
+Eine \acrshort{CI}/\acrshort{CD}-Pipeline \glqq{}verbindet\grqq{} die folgenden Entwicklungsphasen miteinander (In Anlehnung an \cite{redhat_cicd_pipline} und \cite{meyer_continuous_2014}):
+\begin{enumerate}
+    \item Continuous Integration
+    \begin{enumerate}
+        \item Erstellen / Entwicklung
+        \item Test (lokal)
+        \item Zusammenführen (mit dem Rest der Code-Basis, \glqq{}Merging\grqq{})
+    \end{enumerate}
+    \item Continuous Delivery
+        \begin{enumerate}
+        \item Bereitstellung
+        \item Automatische Veröffentlichung 
+    \end{enumerate}
+    \item Continuous Deployment
+        \begin{enumerate}
+        \item Bereitstellung in Zielumgebung
+        \item Zielumgebung kann lokal oder entfernt (remote) im eigenen Unternehmen oder beim Kunden sein
+    \end{enumerate}
+\end{enumerate}
+Aus diesem Ablauf ergeben sich die folgenden Elemente, die in einem derartigen Ablauf notwendig sein:
+% !h um die automatische Anordnung am Seitenanfang zu unterdrücken
+% https://de.overleaf.com/learn/latex/Tables#Positioning_tables
+% \begin{table]} ... \end{table} damit diese Tabelle im Tabellenverzeichnis aufgenommen wird
+% Landscape für Querausrichtung der Tabelle
+    \begin{table}[!h]
+        \centering
+        \begin{tabular}{|p{2cm}|p{4cm}|p{8cm}|}
+            \hline
+            Abschnitt & Phase & Tool\\
+            \hline
+            Continuous Integration & Entwicklung & Lokale \acrshort{IDE}, (verteiltes) Versionskontrollsystem z.B. Git\\
+            \hline
+            Continuous Integration & Test & Lokaler Compiler / Interpreter der jeweiligen Sprache, lokale Tests\\
+            \hline
+            Continuous Integration & Zusammenführen (Merge) & (verteiltes) Versionskontrollsystem z.B. Git\\
+            \hline
+            Continuous Delivery & Release & Buildserver z.B. Jenkins\\
+            \hline
+            Continuous Delivery & Bereitstellung & Repository / Versionsverwaltung für die fertige Software, z.B. Nexus \cite{zanini_integrating_2018}\\
+            \hline
+            Continuous Deployment & Rollout in Test- oder Produktivumgebung & Softwareorchestrierungstool\\
+            \hline
+        \end{tabular}
+            \caption{Phasen und Elemente einer \acrshort{CI}/\acrshort{CD}-Pipeline}
+            \label{Tabelle:Phasen und Elemente einer CICD-Pipeline}
+    \end{table}
+\newline
+Diese relativ kurze Liste der notwendigen Voraussetzungen  
+
+
+
+Es ist davon auszugehen, das keine real existierende \acrshort{CI}/\acrshort{CD}-Pipeline dieser vereinfachenden Darstellung folgt. Dennoch zeigt
